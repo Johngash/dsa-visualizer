@@ -92,13 +92,13 @@ function renderProblems() {
         <p style="margin-bottom: 1rem;">${subTheory.generalKnowledge}</p>
         <h3 style="color: var(--text); margin-bottom: 1rem;">Declaration</h3>
         <p>${subTheory.declaration.theory}</p>
-        <img style="width: 70%" src=${subTheory.declaration.codeSnippet} alt="">
+        <img style="width: 70%" src="${subTheory.declaration.codeSnippet}" alt="">
         <h3 style="color: var(--text); margin-bottom: 1rem;">Initialization</h3>
         <p>${subTheory.initialization.theory}</p>
-        <img style="width: 70%" src=${subTheory.initialization.codeSnippet} alt="">
+        <img style="width: 70%" src="${subTheory.initialization.codeSnippet}" alt="">
         <h3 style="color: var(--text); margin-bottom: 1rem;">Displaying</h3>
         <p>${subTheory.displaying.theory}</p>
-        <img style="width: 70%" src=${subTheory.displaying.codeSnippet} alt="">
+        <img style="width: 70%" src="${subTheory.displaying.codeSnippet}" alt="">
       </div>
     `;
     renderPagination(0);
