@@ -79,6 +79,13 @@ function renderProblems() {
 
   if (currentTab === 'theory') {
     let subTheory = subData.theory;
+    
+    if (!subTheory || Array.isArray(subTheory)) {
+      el.innerHTML = `<div style="padding:3rem;text-align:center;color:var(--text-muted);">Theory coming soon.</div>`;
+      renderPagination(0);
+      return;
+    }
+
     el.innerHTML = `
       <div style="padding: 2rem; color: var(--text-dim); line-height: 1.6;">
         <h2 style="color: var(--text); margin-bottom: 1rem;">${curSub} Theory</h2>
